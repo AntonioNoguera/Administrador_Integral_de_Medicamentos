@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoConstante"
+    tools:context=".editarMedicamento">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trucacho"
+        android:text="Hola"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/trucacho2"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/labelA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:visibility="gone"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Nombre del Medicamento:"
+        app:layout_constraintBottom_toBottomOf="@+id/nombreMedicamento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Cantidad de Dosis:"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/Dosis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/labelC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Vía de Administración:"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/VIAS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/labelD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Horas por Dósis:"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/horas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Editar Medicamento"
+        android:textAlignment="center"
+
+        android:textColor="@color/letrasFondo"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:background="@drawable/estilo_input"
+        android:fontFamily="@font/raleway_semibold"
+        android:hint="Selecciona el Medicamento:"
+        android:inputType="none"
+        android:paddingLeft="29dp"
+        android:paddingTop="10dp"
+
+        android:paddingRight="29dp"
+        android:theme="@style/Spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown_field"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50px"
+            android:fontFamily="@font/raleway_semibold"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btnVolver"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_volver"
+        android:text="Volver"
+        android:textAllCaps="false"
+        android:textColor="@drawable/letras_volver"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btnContinuar"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_continuar"
+        android:text="Confirmar"
+        android:textAllCaps="false"
+        android:textColor="@drawable/letras_continuar"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nombreMedicamento"
+        android:layout_width="390dp"
+        android:layout_height="65dp"
+
+        android:background="@drawable/estilo_input"
+        android:fontFamily="@font/raleway_semibold"
+
+        android:hint="ej. Paracetamol"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363" />
+
+    <EditText
+        android:id="@+id/horas"
+        android:layout_width="390dp"
+        android:layout_height="65dp"
+
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/estilo_input"
+
+        android:fontFamily="@font/raleway_semibold"
+        android:hint="ej. 6"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <EditText
+        android:id="@+id/Dosis"
+        android:layout_width="390dp"
+        android:layout_height="65dp"
+
+        android:background="@drawable/estilo_input"
+        android:fontFamily="@font/raleway_semibold"
+
+        android:hint="ej. 2 Tabletas"
+        android:inputType="number"
+        android:maxLength="2"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/VIAS"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/estilo_input"
+        android:fontFamily="@font/raleway_semibold"
+        android:inputType="none"
+        android:paddingLeft="29dp"
+        android:paddingTop="10dp"
+        android:paddingRight="29dp"
+        android:textColorHint="@color/black"
+        android:theme="@style/Spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.804">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown_field2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50px"
+            android:fontFamily="@font/raleway_semibold"
+            android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

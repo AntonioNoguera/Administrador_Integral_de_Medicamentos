@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoConstante"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:contentDescription="Icono Aplicación Mira Roja"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/aim_icon"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Usuario, del medicamento:\nDexamestasona"
+        android:textAlignment="center"
+        android:textColor="@color/letrasFondo"
+        android:textSize="50sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="298dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Ingrese la dosis recetada:"
+        android:textAlignment="center"
+        android:textColor="@color/letrasFondo"
+
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/txtDosis"
+        android:layout_width="302dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+
+        android:background="@drawable/estilo_input"
+        android:fontFamily="@font/raleway_semibold"
+
+        android:hint="Ej. Dos Tabletas"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContinuar"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_continuar"
+        android:text="Confirmar"
+        android:textAllCaps="false"
+        android:textColor="@drawable/letras_continuar"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/btnVolver"
+        android:layout_width="182dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_volver"
+        android:text="Volver"
+        android:textAllCaps="false"
+        android:textColor="@drawable/letras_volver"
+        android:textSize="30sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Caracters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="76dp"
+        android:fontFamily="@font/raleway_italic"
+        android:text="Caractéres Disponibles: 15"
+
+        android:textColor="@color/letrasFondo"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDosis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.734"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

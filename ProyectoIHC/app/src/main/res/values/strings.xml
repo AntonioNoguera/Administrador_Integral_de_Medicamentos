@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AIM</string>
+    <string-array name="metodos">
+        <item>Oral</item>
+        <item>Rectal</item>
+        <item>Muscular</item>
+    </string-array>
+</resources>
